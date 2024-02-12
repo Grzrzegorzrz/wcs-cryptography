@@ -1,4 +1,4 @@
-Personal work done for Western Cyber Society's Cryptography Project. To be showcased at the 2024 Toronto Tech Expo.
+Personal work done for Western Cyber Society (WCS)'s Cryptography Project. To be showcased at the 2024 Toronto Tech Expo.
 
 Includes:
   1. A simple block chain
@@ -6,3 +6,5 @@ Takes in a message and a key, encrypting a portion of equal size to the key. The
 
   2. A pseudo random number generator
 generates a key of n length using the linear congruence method, with the current time since epoch as the seed
+
+BlockChain.js is a JavaScript refactor of BlockChain.cpp and RNG.h combined, for the purpose of hosting the file on WCS's website.
