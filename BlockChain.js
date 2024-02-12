@@ -1,7 +1,3 @@
-//simple block chain and number generation program
-
-//
-
 function randomNumGen(n) {
     const a = 1664525;
     const b = 1013904223;
@@ -113,7 +109,7 @@ function sleep(milliseconds) {
 
 
 const key = randomNumGen(10);
-sleep(1);
+sleep(1); //to prevent the same seed from being used for both key generations
 const secondKey = randomNumGen(100);
 
 const secondBlock = new Block("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", key);
@@ -129,18 +125,3 @@ console.log("\nsecond block:\n" + secondBlock.decode(secondKey));
 console.log("\n\nPrinting results with correct key\n");
 console.log("first block:\n" + firstBlock.decode(secondKey));
 console.log("\nsecond block:\n" + secondBlock.decode(key));
-
-
-//TO BREAK
-    //FIND MODULUS
-        // tn = sn+1 - sn
-        // un = |tn+2 * tn - tn+1 ^ 2|
-        // m = gcd(u1, u2, ..., un) <- where n is arbitary; higher value of n increases success chance
-
-    //FIND A AND B
-    
-    //BRUTE FORCE
-
-//function bruteForce(startTime, endTime, block) {
-//    return 0;
-//}
